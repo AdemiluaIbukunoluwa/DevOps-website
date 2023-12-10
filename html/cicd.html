@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/cicd.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>CI/CD</title>
+  </head>
+  <body class="container-fluid" onload="displayName();loadMode()">
+    <div class="row">
+      <nav class="navigation col-3">
+        <h5 id="intro">Hi </h5>
+        <a href="./index.html"
+          ><img class="logo" alt="devops" src="../images/logo.png"
+        /></a>
+        <h2 class="title">DevOpsHub</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li>
+            <a href="cicd.html"
+              >Continuous Integration and Continuous Deployment</a
+            >
+          </li>
+          <li><a href="automation.html">Automation</a></li>
+          <li><a href="toolsandtech.html">Devops Tools and Technologies</a></li>
+          <li>
+            <a href="b&c.html">Benefits and Challenges of Adopting Devops</a>
+          </li>
+          <li><a href="signin.html">Sign in</a></li>
+        </ul>
+      </nav>
+      <main class="col-9">
+        <button id="changeMode" onclick="changeMode()"></button>
+        <h1>CI/CD</h1>
+        <div>
+          <p>
+            CI and CD are two terms used very frequently in devops. CI stands
+            for continuous integration while CD stands for continuous deployment
+            or delivery. It is a method used to deliver apps to customers frequently by introducing automation into the software development cycle. 
+          </p>
+          <div id="ciandcd">
+          <div id="ci" class="card">
+            <h3 class="card-header">Continuous Integration</h3>
+              <p class="card-body">
+                This is a practise where developers merger their code into the
+                main branch as often as possible. The changes go through
+                automated testing to ensure that the new code does not break
+                existing code.
+              </p>
+            <h6>Advantages of Continuous integration</h6>
+          <ol>
+            <li>Developers are working with the most recent code</li>
+            <li>There are fewer code branches</li>
+            <li>Small changes and fixes do not need to be merged</li>
+            <li>No consistency problems between branches</li>
+            <li>More reliability because there are small regular changes rather than infrequent larger changes</li>
+          </ol>
+          </div>
+          <div id="cd" class="card">
+            <h3 class="card-header">Continuous Deployment</h3>
+            <p class="card-body">
+              Continuous deployment is a strategy in software development where code changes to an application are released automatically into the production environment. This automation is driven by a series of predefined tests. Once new updates pass those tests, the system pushes the updates directly to the software's users.
+            </p>
+            <h6>Advantages of continuous deployment</h6>
+            <ol>
+              <li>Increased production speed</li>
+              <li>Leads to faster iteration and faster learning</li>
+              <li>Leads to better business outcomes</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      </main>
+      <footer>
+        <ul>
+            <li><a href="https://www.atlassian.com/devops">DevOps Overview</a></li>
+            <li><a href="https://aws.amazon.com/devops/what-is-devops/">What is DevOps? </a></li>
+            <li><a href="https://mindmajix.com/understanding-the-significance-of-devops/">Significance of DevOps</a></li>
+            <li><a href="https://www.knowledgehut.com/blog/devops/top-devops-tools">DevOps Tools</a></li>
+            <li><a href="https://cloud.folio3.com/blog/challenges-of-devops/">DevOps Challenges</a></li>
+        </ul>
+    </footer>
+    </div>
+  </body>
+  <script src="../js/index.js"></script>
+  <script src="../js/signin.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</html>

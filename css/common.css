@@ -1,0 +1,111 @@
+html,
+body {
+  margin: 0;
+}
+/* body{
+
+    display: flex;
+    flex-direction: row;
+} */
+#changeMode {
+  float: right;
+  top: 5px;
+  border: none;
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  background: url('https://png.pngtree.com/png-clipart/20210829/original/pngtree-dark-mode-icon-light-png-clipart-png-image_6661697.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.navigation {
+  background-color: #9ad7e4;
+  /* width: 20%; */
+  height: 100%;
+  position: fixed;
+  padding: 15px;
+  color: white;
+}
+.navigation.dark {
+  background-color: #161a30;
+}
+.logo {
+  top: 0;
+  background: none;
+  padding: 0;
+  /* transform: rotate(-30deg); */
+  width: 50px;
+  height: 30px;
+}
+.title{
+  font-size: 10px;
+}
+.navigation ul {
+  margin-top: 80px;
+  padding-left: 0;
+}
+.navigation ul li {
+  list-style: none;
+  margin-left: 0;
+  font-size: 15px;
+  margin-top: 25px;
+}
+
+.navigation ul a {
+  color: darkblue;
+  text-decoration: none;
+}
+.navigation.dark ul a {
+  color: white;
+}
+.navigation ul a:hover {
+  color: black;
+}
+.navigation.dark ul a:hover {
+  color: darkblue;
+}
+main.dark {
+  background-color: #526d82;
+  color: white;
+}
+main {
+  margin-left: auto;
+  padding-top: 4%;
+  padding-bottom: 5%;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+#intro {
+  float: right;
+  margin-top: 0;
+}
+
+footer {
+  text-align: center;
+  background-color: aliceblue;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+}
+footer.dark {
+     background-color: #2E4374;
+     color: aliceblue;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+}

@@ -1,0 +1,40 @@
+.signin{
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    text-align: center;
+    margin: auto;
+    margin-top: 80px;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    height: max-content;
+}
+label{
+    float: left;
+}
+input{
+    width: 270px;
+    margin-bottom: 50px;
+}
+
+#submit{
+    width: 50%;
+    height: 40px;
+    border: none;
+    margin: auto;
+    background-color: #9AD7E4;
+    color: white;
+    opacity: 0.4;
+}
+#gender{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.form-group{
+    margin-bottom: 10px;
+}

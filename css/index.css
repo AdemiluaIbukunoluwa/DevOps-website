@@ -1,0 +1,12 @@
+#devops-img {
+  width: 400px;
+  height: 200px;
+  float: right;
+}
+#sldc {
+  text-decoration: none;
+}
+#sldc:hover {
+  color: #9ad7e4;
+}
+

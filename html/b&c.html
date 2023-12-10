@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/b&c.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Automation</title>
+  </head>
+  <body class="container-fluid" onload="displayName();loadMode()">
+    <div class="row">
+      <nav class="navigation col-3">
+        <h5 id="intro">Hi </h5>
+        <a href="./index.html"
+          ><img class="logo" alt="devops" src="../images/logo.png"
+        /></a>
+        <h2 class="title">DevOpsHub</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li>
+            <a href="cicd.html"
+              >Continuous Integration and Continuous Deployment</a
+            >
+          </li>
+          <li><a href="automation.html">Automation</a></li>
+          <li><a href="toolsandtech.html">Devops Tools and Technologies</a></li>
+          <li>
+            <a href="b&c.html">Benefits and Challenges of Adopting Devops</a>
+          </li>
+          <li><a href="signin.html">Sign in</a></li>
+        </ul>
+      </nav>
+      <main class="col-9">
+        <button id="changeMode" onclick="changeMode()"></button>
+        <!-- <h1>Benefits and Challenges of Adopting Devops</h1> -->
+        <div class="benefits">
+          <h2 class="card-header">Benefits of DevOps</h2>
+          <ul class="benefits-list">
+            <li class="benefit card">
+              <h5 class="card-header">Rapid Product Delivery</h5>
+              <p>Fast product delivery allows developers to deliver products to customers faster and to become more efficient in delivering high-value results. The use of microservices and continuous delivery lets teams take ownership of services and make releases faster.</p>
+            </li>
+            <li class="benefit card">
+              <h5 class="card-header">Reliability</h5>
+              <p>The use of practices like Continuous Integration and Delivery to test each change makes the system functional and safe. This allows teams to reliably deliver at a more rapid pace while maintaining a positive experience for end users.</p>
+            </li>
+            <li class="benefit card">
+              <h5 class="card-header">Greater Scalability</h5>
+              <p>Devops allows for management of infrastructure and development processes at scale. Automation and consistency help in managing complex and changing systems efficiently and with reduced risk</p>
+            </li>
+            <li class="benefit card">
+              <h5 class="card-header">Collaboration</h5>
+              <p>The DevOps culture emphasizes on ownership and accountability. Developers and Operations teams collaborate closely and combine workflows to deliver a reliable system. This reduces inefficiencies and saves time.</p>
+            </li>
+            <li class="benefit card">
+              <h5 class="card-header">Faster issue resolution and reduced complexity</h5>
+            </li>
+          </ul>
+        </div>
+        <div class="challenges">
+          <h2 class="card-header">Challenges of DevOps</h2>
+          <ul class="challenges-list">
+            <li class="challenge card">
+              <h5 class="card-header">Too much focus on tools</h5>
+              <p>Many companies pay too much attention to tools and not to culture, collaboration and communication. This leads to a complex and counterproductive environment</p>
+            </li>
+            <li class="challenge card">
+              <h5 class="card-header">Toolset Conflicts</h5>
+              <p>Development and operation teams make use of different tools, and integrating these tools can be problematic and can create problems and cause deployments to take longer than expected.</p>
+            </li>
+            <li class="challenge card">
+              <h5 class="card-header">Continuous Learning</h5>
+              <p>Devops involves people learning at all times because software is constantly changing and new tools and technologies are constantly being developed. Getting started with continous learning can be one of the biggest issues for organizations.</p>
+            </li>
+            <li class="challenge card">
+              <h5 class="card-header">Implementing a Test automation Strategy</h5>
+              <p>Often times, companies prioritize CI/CD rollouts over test automation. Testing is important for Devops implementation to be fruitful. Testing automation improves and speeds up the process of developing quality software</p>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <footer>
+        <ul>
+            <li><a href="https://www.atlassian.com/devops">DevOps Overview</a></li>
+            <li><a href="https://aws.amazon.com/devops/what-is-devops/">What is DevOps? </a></li>
+            <li><a href="https://mindmajix.com/understanding-the-significance-of-devops/">Significance of DevOps</a></li>
+            <li><a href="https://www.knowledgehut.com/blog/devops/top-devops-tools">DevOps Tools</a></li>
+            <li><a href="https://cloud.folio3.com/blog/challenges-of-devops/">DevOps Challenges</a></li>
+        </ul>
+    </footer>
+    </div>
+  </body>
+  <script src="../js/index.js"></script>
+  <script src="../js/signin.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</html>

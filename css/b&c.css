@@ -1,0 +1,25 @@
+.benefit, .challenge {
+  list-style: none;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+}
+.challenges{
+    margin-top: 70px;
+}
+.card p {
+  display: none;
+  padding: 10px;
+}
+
+.card:hover p {
+  display: contents;
+  justify-content: right;
+}
+.benefits-list, .challenges-list{
+  margin-top: 50px;
+}
+.benefits, .challenges {
+  text-align: center;
+}

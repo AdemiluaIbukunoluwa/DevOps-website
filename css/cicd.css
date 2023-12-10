@@ -1,0 +1,20 @@
+#ci, #cd{
+    width: 45%;
+    
+}
+#ci h3, #cd h3{
+    text-align: center;
+    margin-top: 20px;
+    color: darkblue;
+}
+
+#ci h6, #cd h6{
+    text-align: center;
+}
+#ciandcd{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20%;
+    margin-top: 3%;
+}

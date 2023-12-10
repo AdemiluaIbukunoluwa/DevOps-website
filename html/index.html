@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>DevOps Hub</title>
+  </head>
+  <body class="container-fluid" onload="displayName(); loadMode()">
+    <div class="row">
+      <nav class="navigation col-3">
+        <h5 id="intro">Hi</h5>
+        <a href="./index.html"
+          ><img class="logo" alt="devops" src="../images/logo.png"
+        /></a>
+        <h2 class="title">DevOpsHub</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li>
+            <a href="cicd.html"
+              >Continuous Integration and Continuous Deployment</a
+            >
+          </li>
+          <li><a href="automation.html">Automation</a></li>
+          <li><a href="toolsandtech.html">Devops Tools and Technologies</a></li>
+          <li>
+            <a href="b&c.html">Benefits and Challenges of Adopting Devops</a>
+          </li>
+          <li><a href="signin.html">Sign in</a></li>
+        </ul>
+      </nav>
+      <main class="col-9">
+        <button id="changeMode" onclick="changeMode()"></button>
+        <h1>What is Devops?</h1>
+        <p>
+          DevOps is a set of practices, tools, and a cultural philosophy that
+          automate and integrate the processes between software development and
+          IT teams. It is a set of practices which enables teams to devliver
+          high value to users by <b>automating</b> processes.
+        </p>
+        <p>
+          The term <i>Devops</i> is a combination of two words,
+          <b>Development</b> and <b>Operations</b>
+        </p>
+        <p>
+          These are two teams involved in Software Devopment. Devops combines
+          both development and operations by making both developers and those in
+          IT operations to work collaboratively throughout the
+          <a
+            id="sldc"
+            target="_blank"
+            href="https://aws.amazon.com/what-is/sdlc/#:~:text=The%20software%20development%20lifecycle%20(SDLC,expectations%20during%20production%20and%20beyond."
+            >software development life cycle</a
+          >
+          and test to deployment to operations.These teams use practices to
+          automate processes that historically have been manual and slow. Devops
+          makes use of tools and technologies to automate these processes
+        </p>
+        <p>
+          This process of automation accelerates processes and also increases
+          reliability
+        </p>
+        <p>The devops symbol shows all the devops stages :</p>
+        <img
+          src="../images/devops-chain.jpg"
+          id="devops-img"
+          alt="Devops Chain"
+        />
+        <ul>
+          <li>Plan</li>
+          <li>Code</li>
+          <li>Build</li>
+          <li>Test</li>
+          <li>Release</li>
+          <li>Deploy</li>
+          <li>Operate</li>
+          <li>Monitor</li>
+        </ul>
+
+        <p>
+          These stages are arraged in the form of an infinity symbol signifying
+          the continuous activity involved in achieveing a reliable system.
+        </p>
+        <p>
+          Devops is not a tool but a mindset, which is implemented to achieve a
+          better and more reliable software development life cycle and overall
+          software.
+        </p>
+      </main>
+      <footer>
+        <ul>
+          <h4>More References</h4>
+          <li>
+            <a href="https://www.atlassian.com/devops">DevOps Overview</a>
+          </li>
+          <li>
+            <a href="https://aws.amazon.com/devops/what-is-devops/"
+              >What is DevOps?
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://mindmajix.com/understanding-the-significance-of-devops/"
+              >Significance of DevOps</a
+            >
+          </li>
+          <li>
+            <a href="https://www.knowledgehut.com/blog/devops/top-devops-tools"
+              >DevOps Tools</a
+            >
+          </li>
+          <li>
+            <a href="https://cloud.folio3.com/blog/challenges-of-devops/"
+              >DevOps Challenges</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+  <script src="../js/index.js"></script>
+  <script src="../js/signin.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</html>

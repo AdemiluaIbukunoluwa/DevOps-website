@@ -1,0 +1,30 @@
+.tools{
+    margin-top: 50px;
+}
+
+.tools button{
+    width: 30%;
+    height: 40px;
+    border: 2px solid darkblue;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+}
+
+.tool-explained{
+    display: none;
+    padding: 30px;
+    float: right;
+    width: 400px;
+    height: 300px;
+    overflow-y: auto;
+    margin-left: 20%;
+    background-color: aliceblue;
+    border: 2px solid darkblue;
+    top: 45%;
+    margin-left: 25%;
+    position: absolute;
+    color: black;
+}
+.default{
+    display: block;
+}

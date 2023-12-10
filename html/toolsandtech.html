@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/toolsandtech.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Tools and Technologies</title>
+  </head>
+  <body class="container-fluid" onload="displayName();loadMode()">
+    <div class="row">
+      <nav class="navigation col-3">
+        <h5 id="intro">Hi </h5>
+        <a href="./index.html"
+          ><img class="logo" alt="devops" src="../images/logo.png"
+        /></a>
+        <h2 class="title">DevOpsHub</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="cicd.html"
+              >Continuous Integration and Continuous Deployment</a
+            >
+          </li>
+          <li><a href="automation.html">Automation</a></li>
+          <li><a href="toolsandtech.html">Devops Tools and Technologies</a></li>
+          <li>
+            <a href="b&c.html">Benefits and Challenges of Adopting Devops</a>
+          </li>
+          <li><a href="signin.html">Sign in</a></li>
+        </ul>
+      </nav>
+      <main class="col-9">
+        <button id="changeMode" onclick="changeMode()"></button>
+        <h1>Devops Tools and Technologies</h1>
+        <p><p>DevOps makes use of tools and technologies to help in identifying and resolving bugs, testing, and improving the quality of the developmental stages of the applications. These tools improve the quality and reliability of the application.</p>
+        <p>Below are some of the DevOps tools:</p></p>
+        <div class="tools">
+          <div class="tool-explained default">
+            <p>Click on tool to see explanation</p>
+          </div>
+          <div>
+            <button class="btn" onclick="InfoStatus('docker')">Docker</button>
+            <p class="tool-explained" id="docker">Docker allows web builders to manage a framework of software in the same way as managing the applications. It uses a technology known as <b>namespaces</b> to segregate information into containers. Docker is basically an environment that runs multiple containers (Virtual Machines). These containers can be managed easily and allow the smooth functioning of the entire software as a whole. Docker also provides a virtual network so all the containers can connect together. Containers are created using images which serve as templates for the container. An image contains all the software - OS, libraries, etc., but it is not running. Containers can be started using the image so that they start with everything ready to run.<br><br> Containers allow you to deploy your application with all the software they need to run, thereby making it easy to run the application anywhere without any compatibility issues.</p>
+          </div>
+          <div>
+            <button class="btn" onclick="InfoStatus('jenkins')">Jenkins</button>
+            <p class="tool-explained" id="jenkins">Jenkins provides some of the best DevOps technologies. It stores data in JavaScript, which helps with continuous integration basis. It makes it easier to build a server and track problems more easily. This makes problem-solving more efficient. It is an orchestration tool that runs pipelines (CI programs). It is easily accessible because it is scripted in Java.</p>
+          </div>
+          <div>
+            <button class="btn" onclick="InfoStatus('ganglia')">Ganglia</button>
+            <p class="tool-explained" id="ganglia">This is one of the most important tools in devops. It analyzes data by analyzing and converting data clusters into graphical charts or displays.</p>
+          </div>
+          <div>
+            <button class="btn" onclick="InfoStatus('ansible')">Ansible</button>
+            <p class="tool-explained" id="ansible">Ansible allows managers to make problem-solving easier by providing repetitive solutions to repetitive problems. It automates the problem-solving process. Its main target is to increase productivity.</p>
+          </div>
+          <div>
+            <button  class="btn" onclick="InfoStatus('maven')">Maven</button>
+            <p class="tool-explained" id="maven">Maven improves the management and transformation of the infrastructure. It optimizes the project management system through a Project Object Model (POM). It is operated by Java, Ruby, Scala, etc</p>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <ul>
+            <li><a href="https://www.atlassian.com/devops">DevOps Overview</a></li>
+            <li><a href="https://aws.amazon.com/devops/what-is-devops/">What is DevOps? </a></li>
+            <li><a href="https://mindmajix.com/understanding-the-significance-of-devops/">Significance of DevOps</a></li>
+            <li><a href="https://www.knowledgehut.com/blog/devops/top-devops-tools">DevOps Tools</a></li>
+            <li><a href="https://cloud.folio3.com/blog/challenges-of-devops/">DevOps Challenges</a></li>
+        </ul>
+    </footer>
+    </div>
+  </body>
+  <script src="../js/index.js"></script>
+  <script src="../js/signin.js"></script>
+  <script src="../js/tools.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</html>
