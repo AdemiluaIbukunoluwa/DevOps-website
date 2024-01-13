@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/automation.css" />
+    <link rel="stylesheet" href="./css/signin.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <title>Automation</title>
+    <title>Sign In</title>
   </head>
-  <body class="container-fluid" onload="displayName();loadMode()">
+  <body class="container-fluid" onload="displayName();loadMode();isSignedIn() ">
     <div class="row">
       <nav class="navigation col-3">
         <h5 id="intro">Hi </h5>
@@ -37,26 +37,39 @@
           <li><a href="signin.html">Sign in</a></li>
         </ul>
       </nav>
-      <main class="col-9">
+      <main class="col-9 signin" id="signin">
         <button id="changeMode" onclick="changeMode()"></button>
-        <h1>Automation</h1>
-        <p>
-          To be able to make changes on the main branch reliably the whole
-          system must be retested, along with the new feature every time the
-          code is merged. To do we need to Automate all or most of our testing.
-          This requires advanced tooling and processes. Automation teams
-          collaborate while continuously improving how they design, build, test,
-          deploy, release, and monitor software applications.Automation
-          increases collaboration and automates repetitive manual tasks.
-        </p>
-        <p>
-          <img
-            src="./images/automation.png"
-            id="automation-img"
-            alt="automation"
-          />
-        </p>
+        <h1>Sign In</h1>
+        <form  onsubmit="return submitForm()" method="post" action="index.html">
+          <div class="form-group">
+          <input class="form-control" type="text" placeholder="Username" name="name" id="name" required/>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="date" name="dob" id="dob" required/>
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="email" placeholder="Email address" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required/>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="password" placeholder="Password" name="password" id="password"  pattern=".{8,}" title="Password must be at least 8 characters long" required/>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="password" placeholder="Confirm Password" name="cpassword" id="cpassword" pattern=".{8,}" required/>
+                  </div>
+          <span class="form-group" id="gender">
+            <label>Female</label>
+            <input type="radio" name="gender" value="Female"  class="form-control form-check-input" />
+            <label>Male</label>
+            <input type="radio" name="gender" value="Male" class="form-control form-check-input" />
+          </span>
+          <div class="form-group">
+            <input class="form-check-input" type="checkbox" name="t&c" id="t&c"/>
+            <span>I agree to the Terms and Conditions</span>
+          </div>
+          <input type="submit" id="submit" class="my-4" disabled />
+        </form>
       </main>
+      <!-- FIX ISSUE WITH GENDER VALUE -->
       <footer>
         <ul>
             <li><a href="https://www.atlassian.com/devops">DevOps Overview</a></li>
@@ -68,11 +81,12 @@
     </footer>
     </div>
   </body>
-  <script src="../js/signin.js"></script>
-  <script src="../js/index.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/signin.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"
   ></script>
+  <script src="../js/signin.js"></script>
 </html>
